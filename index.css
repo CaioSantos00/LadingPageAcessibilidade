@@ -34,7 +34,6 @@ a{
 header {
     width: 100%;
     background-color: #FAF3F0;
-    position: fixed;
 }
 
 header ul{
@@ -70,8 +69,8 @@ li:hover ::after {
 }
 
 #container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: 'textSo imgVet';
     margin: 0px 80px;
 }
 
@@ -158,4 +157,28 @@ a #vejaSobre{
 footer {
     padding: 15px;
     text-align: center;
+}
+
+@media (max-width: 1115px) {
+    html {
+        scroll-padding-top: 4px;
+    }
+    #container {
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 'textSo';
+    }
+    #divTextSo {
+        text-align: center;
+    }
+    #textSo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1280px) {
+    #divNotices {
+    grid-template-areas: 'cardsNoti cardsNotia';
+    }
 }
