@@ -166,11 +166,22 @@ footer {
     #container {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;    
+        text-align: center;
     }
-    #textSo {
-        display: flex;
+    
+    #divBtn {
         justify-content: center;
+    }
+
+    header ul{
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    #divTextSo {
+        width: 100%;
     }
 }
 
