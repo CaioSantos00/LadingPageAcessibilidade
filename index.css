@@ -69,8 +69,8 @@ li:hover ::after {
 }
 
 #container {
-    display: grid;
-    grid-template-areas: 'textSo imgVet';
+    display: flex;
+    justify-content: center;
     margin: 0px 80px;
 }
 
@@ -161,15 +161,12 @@ footer {
 
 @media (max-width: 1115px) {
     html {
-        scroll-padding-top: 4px;
+        scroll-padding-top: 10px;
     }
     #container {
-        display: grid;
+        display: flex;
         justify-content: center;
-        grid-template-areas: 'textSo';
-    }
-    #divTextSo {
-        text-align: center;
+        flex-direction: column;    
     }
     #textSo {
         display: flex;
