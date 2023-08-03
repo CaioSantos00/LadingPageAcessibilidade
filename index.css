@@ -120,7 +120,7 @@ a #vejaSobre{
     color: #ffffff;
 }
 
-#divSobre {
+.divSobre {
     margin-top: 60px;
     padding: 10px 80px 25px;
     background-color: rgb(158, 88, 250);
@@ -128,7 +128,7 @@ a #vejaSobre{
     font-size: 1.5em;
 }
 
-#idTitle {
+.idTitle {
     text-align: center;
 }
 
@@ -187,7 +187,7 @@ footer {
     #textSo {
         width: 100%;
     }   
-    #divSobre {
+    .divSobre {
     text-align: center;
     font-size: 1em;
     }
@@ -205,11 +205,23 @@ footer {
 
 }
 
+
+@media (max-width: 685px) {
+   #video {
+    width: 300px;
+    height: 200px;
+    
+   }
+}
+
 @media (max-width: 449px) {
+    header {
+        font-size: 0.8em;
+    }
     #container {
         margin: 0px 3vw;
     }    
-    #divSobre {
+    .divSobre {
        font-size: 0.8em;
        padding: 5px 15px;
     }
@@ -219,7 +231,7 @@ footer {
     #imgVet {
         width: 100%;
     }   
-    #divSobre {
+    .divSobre {
         font-size: 1em;
     }
 }
