@@ -7,24 +7,37 @@
     <link rel="stylesheet" href="index.css">
 </head> 
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <header>  
         <nav>
-            
             <ul>
                 <li><a href="#container">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sobreD">Sobre</a></li>
                 <li><a href="#containerNoti">Sugestões</a></li>
                 <li><a href="#terapia">Terapia</a></li>
             </ul>
         </nav>
     </header>
+    <main>
     <section>
         <div id="container">
             <div id="textSo">
                 <div id="divTextSo">
-                    <div class="title">Deficiência mental <audio controls>
-                        <source src="audioSite.mp3" type="audio/mpeg">
-                      </audio></div>
+                    <div class="idTitle" id="titleDefi">
+                        Deficiência mental <br>
+                        <audio controls>
+                        <source src="./audios/audioStiteCompleto.mp3" type="audio/mpeg">
+                      </audio>
+                    </div>
                     
                     A deficiência mental é uma condição que afeta a capacidade cognitiva de um indivíduo, limitando suas habilidades intelectuais e adaptativas. Também conhecida como deficiência intelectual, essa condição pode variar em gravidade e pode estar presente desde o nascimento ou se desenvolver ao longo da vida devido a diferentes fatores, como condições genéticas, problemas durante o desenvolvimento fetal, traumas ou doenças adquiridas.
 
@@ -33,7 +46,7 @@
                 Um dos desafios enfrentados por pessoas com deficiência mental é a sociedade muitas vezes não compreender suas necessidades específicas. Em muitos casos, podem surgir estigmas e preconceitos que afetam a inclusão dessas pessoas em diversas esferas da vida, como educação, emprego e vida social. No entanto, é crucial lembrar que todos têm o direito fundamental de serem tratados com dignidade, igualdade e respeito, independentemente de suas capacidades intelectuais.
                     <br>
                     <div id="divBtn">
-                        <a href=""><button id="vejaSobre">Veja mais sobre</button></a>
+                        <a href="#sobreD"><button id="vejaSobre">Veja mais sobre</button></a>
                     </div>
                 </div>
             </div>
@@ -41,9 +54,13 @@
                 <img src="./imgs/img1.png" alt="Representação de uma pessoa deficiente mental" id="imgAcess">
             </div>
         </div>
-        <div class="divSobre" id="#sobre">
-            
-            <h1 class="title" class="idTitle">Deficiência mental </h1>
+        <div class="divSobre" id="sobreD">
+            <h1 class="idTitle">Deficiência mental </h1>
+            <div class="audioCenter">
+            <audio controls>
+                <source src="./audios/audioSite.mp3" type="audio/mpeg">
+              </audio>
+            </div>
             <p>A deficiência mental é uma condição que afeta a capacidade cognitiva de um indivíduo, limitando suas habilidades intelectuais e adaptativas. Também conhecida como deficiência intelectual, essa condição pode variar em gravidade e pode estar presente desde o nascimento ou se desenvolver ao longo da vida devido a diferentes fatores, como condições genéticas, problemas durante o desenvolvimento fetal, traumas ou doenças adquiridas.
 
                 É essencial abordar o tema da deficiência mental com sensibilidade e respeito, reconhecendo que as pessoas com essa condição são tão valiosas quanto qualquer outro indivíduo, com suas próprias capacidades, personalidades e talentos únicos.
@@ -61,15 +78,17 @@
                 Em suma, a deficiência mental é uma parte da diversidade humana e não deve ser motivo para exclusão ou discriminação. Ao reconhecer e respeitar as habilidades e potenciais de cada indivíduo, independentemente de suas capacidades intelectuais, construímos uma sociedade mais compassiva, inclusiva e justa para todos.</p>
         </div>
         <div id="containerNoti">
-        <h1 class="title" id="noti">Sugestões</h1>
+        <h1 class="idTitle" id="noti">Sugestões</h1>
         <article id="divNotices">
             <div class="cardsNoti">
                 <div class="imgDiv">
                     <img src="imgs/img1.png" class="imgsCards" alt="Representação de uma pessoa deficiente mental">
                 </div>
+                
                 <div class="textCard">
                     Educação inclusiva: Garantir o acesso a uma educação inclusiva e de qualidade é fundamental. Escolas devem ser preparadas para receber estudantes com deficiência mental, oferecendo recursos e apoio necessários para atender suas necessidades educacionais específicas.
                 </div>
+                
             </div>
             <div class="cardsNoti">
                 <div class="imgDiv">
@@ -131,14 +150,22 @@
         </div>
         <div class="divSobre" id="terapia">
             
-            <h1 class="title" class="idTitle">Terapia online </h1>
+            <h1 class="idTitle">Terapia online </h1>
+            <div class="audioCenter">
+                <audio controls>
+                    <source src="./audios/audioTerapia.mp3" type="audio/mpeg">
+                  </audio>
+                </div>
             <p>A terapia online, também conhecida como terapia virtual ou terapia por telemedicina, é uma forma de apoio psicológico e emocional realizada através de plataformas de comunicação online. Nessa modalidade, o paciente e o terapeuta se comunicam por meio de chamadas de vídeo, mensagens de texto ou outras ferramentas de comunicação digital.
-
                 Essa abordagem oferece uma alternativa conveniente e acessível para pessoas que enfrentam dificuldades de acesso a serviços de saúde mental tradicionais, como limitações geográficas, falta de mobilidade ou agendas ocupadas. A terapia online pode ser realizada a partir do conforto da própria casa do paciente, permitindo maior flexibilidade de horários e redução de custos com deslocamento.</p>
-                <br>
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/8t9PxWBaDog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div id="divVideo">
+                    <iframe id="video" width="800px" height="500px" src="https://www.youtube.com/embed/8t9PxWBaDog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
         </div>
     </section>
+</main>
+</body>
     <footer>Copyright ©</footer>
 </body>
 </html>

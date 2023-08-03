@@ -32,12 +32,19 @@ a{
 }
 
 audio {
+    margin: 10px;
+    display: flex;
     border-radius: 1px;
     height: 30px;
   }
   
   audio::-webkit-media-controls-panel {
     background-color: rgb(255, 196, 0);
+  }
+
+  .audioCenter {
+    display: flex;
+    justify-content: center;
   }
 
 header {
@@ -96,11 +103,6 @@ li:hover ::after {
     width: 100%;
 }
 
-.title {
-    color: rgb(255, 196, 0);
-    font-size: 3em;
-}
-
 #divBtn {
     display: flex;
     margin-top: 15px;
@@ -122,13 +124,21 @@ a #vejaSobre{
 
 .divSobre {
     margin-top: 60px;
-    padding: 10px 80px 25px;
+    padding: 50px 80px;
     background-color: rgb(158, 88, 250);
     color: #ffffff;
     font-size: 1.5em;
 }
 
+#titleDefi {
+    margin: 50px 0px 0px;
+    text-align: start;
+}
+
 .idTitle {
+    color: rgb(255, 196, 0);
+    font-size: 3em;
+    margin: 0px;
     text-align: center;
 }
 
@@ -159,6 +169,7 @@ a #vejaSobre{
 }
 
 #noti {
+    margin: 50px;
     text-align: center;
 }
 
@@ -167,10 +178,21 @@ footer {
     text-align: center;
 }
 
+#divVideo {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 1115px) {
     html {
         scroll-padding-top: 10px;
     }
+    
+    #titleDefi {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
     #divBtn {
         justify-content: center;
     }
@@ -185,6 +207,7 @@ footer {
     margin-right: 0px;
     }
     #textSo {
+        text-align: center;
         width: 100%;
     }   
     .divSobre {
@@ -199,34 +222,24 @@ footer {
     #imgVet {
     width: 100%;
     }
-    .title {
-        font-size: 2em;
+}
+
+
+@media (max-width: 553px) {
+    #video {
+     width: 300px;
+     height: 200px;
     }
-
-}
-
-
-@media (max-width: 685px) {
-   #video {
-    width: 300px;
-    height: 200px;
-    
-   }
-}
-
-@media (max-width: 449px) {
     header {
         font-size: 0.8em;
     }
     #container {
         margin: 0px 3vw;
     }    
+
     .divSobre {
        font-size: 0.8em;
        padding: 5px 15px;
-    }
-    .title {
-        font-size: 0.9;
     }
     #imgVet {
         width: 100%;
@@ -234,4 +247,4 @@ footer {
     .divSobre {
         font-size: 1em;
     }
-}
+ }
